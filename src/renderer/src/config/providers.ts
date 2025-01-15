@@ -28,7 +28,6 @@ import StepProviderLogo from '@renderer/assets/images/providers/step.png'
 import TogetherProviderLogo from '@renderer/assets/images/providers/together.png'
 import ZeroOneProviderLogo from '@renderer/assets/images/providers/zero-one.png'
 import ZhipuProviderLogo from '@renderer/assets/images/providers/zhipu.png'
-import QwenLMProviderLogo from '@renderer/assets/images/providers/qwenlm.png'
 
 export function getProviderLogo(providerId: string) {
   switch (providerId) {
@@ -92,8 +91,6 @@ export function getProviderLogo(providerId: string) {
       return MistralProviderLogo
     case 'jina':
       return JinaProviderLogo
-    case 'qwenlm':
-      return QwenLMProviderLogo
     default:
       return undefined
   }
@@ -420,17 +417,6 @@ export const PROVIDER_CONFIG = {
       apiKey: 'https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/~/OpenAI',
       docs: 'https://learn.microsoft.com/en-us/azure/ai-services/openai/',
       models: 'https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models'
-    }
-  },
-  qwenlm: {
-    api: {
-      url: 'https://chat.qwenlm.ai/api/'
-    },
-    websites: {
-      official: 'https://chat.qwenlm.ai',
-      apiKey: 'https://chat.qwenlm.ai',
-      docs: 'https://chat.qwenlm.ai',
-      models: 'https://chat.qwenlm.ai'
     }
   }
 }
